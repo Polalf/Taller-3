@@ -46,3 +46,6 @@ TagManager:
   - name: olaper
     uniqueID: 282738851
     locked: 0
+  - name: osc{
+    uniqueID: 161261123
+    locked: 0
