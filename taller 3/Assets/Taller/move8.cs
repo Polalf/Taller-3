@@ -18,46 +18,54 @@ public class move8 : MonoBehaviour
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
         moveInput = new Vector2(moveX, moveY).normalized;
-        if (moveX == 0 )
+
+        if (moveX == 1 && moveY == 1)
         {
-            if(moveY < 0)
-            {
-                transform.rotation = Quaternion.Euler(0,0, 180);
-            }
-            else if (moveY > 0)
-            {
-                transform.rotation = Quaternion.Euler(0, 0, 0);
-            }
+            //diagonal derecha arriba
+            Debug.Log("diagonal derecha arriba");
+            transform.rotation = Quaternion.Euler(0, 0, 315);
         }
-        if (moveX > 0)
-        { 
-            if (moveY < 0)
-            {
-                transform.rotation = Quaternion.Euler(0, 0, 225);
-            }
-            else if (moveY > 0)
-            {
-                transform.rotation = Quaternion.Euler(0, 0, 315);
-            }
-            else
-            {
-                transform.rotation = Quaternion.Euler(0, 0, 270);
-            }
-        }
-        if (moveX < 0)
+        if (moveX == 1 && moveY == 0)
         {
-            if (moveY < 0)
-            {
-                transform.rotation = Quaternion.Euler(0, 0, 135);
-            }
-            else if (moveY > 0)
-            {
-                transform.rotation = Quaternion.Euler(0, 0, 45);
-            }
-            else
-            {
-                transform.rotation = Quaternion.Euler(0, 0, 90);
-            }
+            // derecha
+            Debug.Log("derecha");
+            transform.rotation = Quaternion.Euler(0, 0, 270);
+        }
+        if (moveX == 1 && moveY == -1)
+        {
+            //diagonal derecha abajo
+            Debug.Log("diagonal derecha abajo");
+            transform.rotation = Quaternion.Euler(0, 0, 225);
+        }
+        if (moveX == 0 && moveY == -1)
+        {
+            //abajo
+            Debug.Log("abajo");
+            transform.rotation = Quaternion.Euler(0, 0, 180);
+        }
+        if (moveX == -1 && moveY == -1)
+        {
+            //diagonal izq anajo
+            Debug.Log("diagonal izq anajo");
+            transform.rotation = Quaternion.Euler(0, 0, 135);
+        }
+        if (moveX == -1 && moveY == 0)
+        {
+            //izq
+            Debug.Log("izq");
+            transform.rotation = Quaternion.Euler(0, 0, 90);
+        }
+        if (moveX == -1 && moveY == 1)
+        {
+            //diagonal izq arriba
+            Debug.Log("diagonal izq arriba");
+            transform.rotation = Quaternion.Euler(0, 0, 45);
+        }
+        if (moveX == 0 && moveY == 1)
+        {
+            // arriba
+            Debug.Log("arriba");
+            transform.rotation = Quaternion.Euler(0, 0, 0);
         }
     }
     private void FixedUpdate()
