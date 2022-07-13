@@ -2363,7 +2363,7 @@ GameObject:
   - component: {fileID: 1068082785}
   - component: {fileID: 1068082786}
   m_Layer: 0
-  m_Name: Square
+  m_Name: piso
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2377,7 +2377,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1068082784}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.1295, y: -0.4028, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2482,8 +2482,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1105538245}
   - component: {fileID: 1105538244}
-  - component: {fileID: 1105538243}
   - component: {fileID: 1105538242}
+  - component: {fileID: 1105538248}
   - component: {fileID: 1105538241}
   - component: {fileID: 1105538247}
   m_Layer: 0
@@ -2530,19 +2530,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1105538243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1105538240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8995d66e61f07b8489c2b9c8dd7b6227, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
 --- !u!212 &1105538244
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2695,6 +2682,20 @@ MonoBehaviour:
   keyToPress: 102
   eventType: 0
   frequency: 0.5
+--- !u!114 &1105538248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105538240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48a2ad6b9438b8847a429b064cf5ce61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  framesToUpdate: 1
 --- !u!1 &1118191941
 GameObject:
   m_ObjectHideFlags: 0
@@ -3275,7 +3276,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.7607843}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.7647059}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
