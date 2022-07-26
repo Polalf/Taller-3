@@ -5,7 +5,6 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
-  - Bullet
   layers:
   - Default
   - TransparentFX
@@ -43,9 +42,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: olaper
-    uniqueID: 282738851
+  - name: player
+    uniqueID: 2528064199
     locked: 0
-  - name: osc{
-    uniqueID: 161261123
+  - name: osc
+    uniqueID: 4223033423
     locked: 0
