@@ -23,6 +23,11 @@ public class CameraFollow : MonoBehaviour
         _camera = GetComponent<Camera>();
     }
 
+    private void Start()
+    {
+        target = GameObject.Find("pl (1) (Clone)").transform;
+    }
+
     // FixedUpdate is called every frame, when the physics are calculated
     void FixedUpdate()
 	{

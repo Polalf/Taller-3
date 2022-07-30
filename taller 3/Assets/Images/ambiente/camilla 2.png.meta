@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a9d6f4c0162c5e8459b7881cc95be138
+guid: 24b6da550968be34790f4d302249a564
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -116,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: water
+      name: camilla
       rect:
         serializedVersion: 2
-        x: 39
-        y: 36
-        width: 21
-        height: 29
+        x: 88
+        y: 81
+        width: 131
+        height: 122
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,8 +130,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd88a2daff9cfa942b0d84616b30a658
-      internalID: -1631736960
+      spriteID: d863cfb41a0a2d94e9bd1eb6d5e3bd7d
+      internalID: 99290659
       vertices: []
       indices: 
       edges: []
@@ -147,7 +147,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      water: -1631736960
+      camilla: 99290659
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

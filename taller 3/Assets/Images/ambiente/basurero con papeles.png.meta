@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a9d6f4c0162c5e8459b7881cc95be138
+guid: 91d09f21dd1cec649835da89581cd220
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -116,22 +116,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: water
+      name: basurero con papeles_0
       rect:
         serializedVersion: 2
-        x: 39
-        y: 36
-        width: 21
-        height: 29
+        x: 26
+        y: 34
+        width: 48
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd88a2daff9cfa942b0d84616b30a658
-      internalID: -1631736960
+      spriteID: d72d6b8b1965f6d44a3b1750ebb5af2f
+      internalID: -1498461662
       vertices: []
       indices: 
       edges: []
@@ -147,7 +147,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      water: -1631736960
+      basurero con papeles_0: -1498461662
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

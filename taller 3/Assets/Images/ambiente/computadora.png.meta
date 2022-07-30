@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a9d6f4c0162c5e8459b7881cc95be138
+guid: 7ca66f4659923ff4eb574749c8c610b2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -116,22 +116,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: water
+      name: computadora_0
       rect:
         serializedVersion: 2
-        x: 39
-        y: 36
-        width: 21
-        height: 29
+        x: 38
+        y: 39
+        width: 24
+        height: 23
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd88a2daff9cfa942b0d84616b30a658
-      internalID: -1631736960
+      spriteID: 56a10e3876169e348ad90e903c37c58c
+      internalID: 1518961581
       vertices: []
       indices: 
       edges: []
@@ -147,7 +147,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      water: -1631736960
+      computadora_0: 1518961581
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
