@@ -712,8 +712,8 @@ GameObject:
   m_Component:
   - component: {fileID: 369298136}
   - component: {fileID: 369298135}
-  - component: {fileID: 369298134}
   - component: {fileID: 369298137}
+  - component: {fileID: 369298134}
   m_Layer: 0
   m_Name: cam
   m_TagString: Untagged
@@ -1644,7 +1644,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1104909545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2874,7 +2874,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1603030237
 MonoBehaviour:
   m_ObjectHideFlags: 0
