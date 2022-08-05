@@ -5,8 +5,9 @@ using UnityEngine;
 public class DontDestroy : MonoBehaviour
 
 {
-    private void OnLevelWasLoaded(int level)
+    private void Start()
     {
         DontDestroyOnLoad(this.gameObject);
     }
+
 }

@@ -8,20 +8,22 @@ public class leveloaded : MonoBehaviour
     public GameObject playerPrefab = null;
     public Vector3 respawnPosition;
 
+
     // Start is called before the first frame update
     void Start()
     {
-        currentPlayer = GameObject.Find("pl");
+        currentPlayer = GameObject.FindGameObjectWithTag("Player");
         if (currentPlayer == null)
         {
-            Instantiate(playerPrefab);
+            currentPlayer = Instantiate(playerPrefab,respawnPosition,Quaternion.identity);
+            currentPlayer.GetComponent<coleccionables>().setPlayerUi();
         }
         else
         {
             //Setear datos player
             currentPlayer.transform.position = respawnPosition;
+            currentPlayer.GetComponent<coleccionables>().setPlayerUi();
+            currentPlayer.GetComponent<coleccionables>().checkUIcollectables();
         }
     }
-
-
 }

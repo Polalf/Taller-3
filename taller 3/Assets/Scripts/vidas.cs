@@ -4,15 +4,27 @@ using UnityEngine;
 
 public class vidas : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public int vida = 5;
+
     void Start()
     {
-        
+        vida = 5;
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            vida = vida -1;
+            if (vida <= 0)
+            {
+                //game over
+            }
+        }
     }
 }
