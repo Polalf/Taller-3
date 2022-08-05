@@ -5,6 +5,7 @@ using UnityEngine;
 public class vidas : MonoBehaviour
 {
     public int vida = 5;
+    
 
     void Start()
     {
@@ -24,6 +25,8 @@ public class vidas : MonoBehaviour
             if (vida <= 0)
             {
                 //game over
+                
+
             }
         }
     }

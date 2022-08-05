@@ -6,7 +6,8 @@ using System.Collections;
 public class FollowTarget : Physics2DObject
 {
 	// This is the target the object is going to move towards
-	public Transform target;
+
+	public Transform target; //GameObject.FindGameObjectWithTag("Player");
 
 	[Header("Movement")]
 	// Speed used to move towards the target

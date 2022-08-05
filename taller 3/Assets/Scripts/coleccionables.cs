@@ -6,30 +6,30 @@ using UnityEngine.UI;
 public class coleccionables : MonoBehaviour
 {
     public bool cuerda = false;
-    public bool calaca = false;
+    public bool craneo = false;
     public bool oso = false;
-    public bool atrapasueño = false;
+    public bool atrapasueno = false;
     public Image imgcuerda;
     public Image imgcalaca;
     public Image imgoso;
-    public Image imgatrapasueño;
+    public Image imgatrapasueno;
 
     void Start()
     {
         cuerda = false;
-        calaca = false;
+        craneo = false;
         oso = false;
-        atrapasueño = false;
+        atrapasueno = false;
         imgcuerda.gameObject.SetActive(false);
         imgcalaca.gameObject.SetActive(false);
         imgoso.gameObject.SetActive(false);
-        imgatrapasueño.gameObject.SetActive(false);
+        imgatrapasueno.gameObject.SetActive(false);
     }
 
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("pentagrama") && cuerda == true && calaca == true && oso == true && atrapasueño == true)// sirve sin poner el == true
+        if (collision.gameObject.CompareTag("pentagrama") && cuerda == true && craneo == true && oso == true && atrapasueno == true)// sirve sin poner el == true
         {
             //ending
         }
@@ -40,9 +40,9 @@ public class coleccionables : MonoBehaviour
             imgcuerda.gameObject.SetActive(true);
             Destroy(collision.gameObject);
         }
-        if (collision.gameObject.name == "calaca")
+        if (collision.gameObject.name == "craneo")
         {
-            calaca = true;
+            craneo = true;
             imgcalaca.gameObject.SetActive(true);
             Destroy(collision.gameObject);
         }
@@ -52,17 +52,17 @@ public class coleccionables : MonoBehaviour
             imgoso.gameObject.SetActive(true);
             Destroy(collision.gameObject);
         }
-        if (collision.gameObject.name == "atrapasueño")
+        if (collision.gameObject.name == "atrapasuenos")
         {
-            atrapasueño = true;
-            imgatrapasueño.gameObject.SetActive(true);
+            atrapasueno = true;
+            imgatrapasueno.gameObject.SetActive(true);
             Destroy(collision.gameObject);
         }
     }
 
     public void setPlayerUi()
     {
-        imgatrapasueño = GameObject.Find("UIatrapasueño").GetComponent<Image>();
+        imgatrapasueno = GameObject.Find("UIatrapasueño").GetComponent<Image>();
         imgcalaca = GameObject.Find("UIcraneo").GetComponent<Image>();
         imgoso = GameObject.Find("UIoso").GetComponent<Image>();
         imgcuerda = GameObject.Find("UIcuerda").GetComponent<Image>();
@@ -79,7 +79,7 @@ public class coleccionables : MonoBehaviour
             imgcuerda.gameObject.SetActive(false);
         }
 
-        if (calaca)
+        if (craneo)
         {
             imgcalaca.gameObject.SetActive(true);
         }
@@ -97,13 +97,13 @@ public class coleccionables : MonoBehaviour
             imgoso.gameObject.SetActive(false);
         }
 
-        if (atrapasueño)
+        if (atrapasueno)
         {
-            imgatrapasueño.gameObject.SetActive(true);
+            imgatrapasueno.gameObject.SetActive(true);
         }
         else
         {
-            imgatrapasueño.gameObject.SetActive(false);
+            imgatrapasueno.gameObject.SetActive(false);
         }
     }
 }
