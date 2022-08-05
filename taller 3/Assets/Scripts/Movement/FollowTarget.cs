@@ -18,9 +18,13 @@ public class FollowTarget : Physics2DObject
 
 	// The direction that will face the target
 	public Enums.Directions useSide = Enums.Directions.Up;
-	
-	// FixedUpdate is called once per frame
-	void FixedUpdate ()
+    private void Start()
+    {
+		target = GameObject.Find("pl (Clone)").transform;
+	}
+
+    // FixedUpdate is called once per frame
+    void FixedUpdate ()
 	{
 		//do nothing if the target hasn't been assigned or it was detroyed for some reason
 		if(target == null)
