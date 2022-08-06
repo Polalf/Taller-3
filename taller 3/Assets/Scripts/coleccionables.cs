@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class coleccionables : MonoBehaviour
 {
@@ -32,6 +33,7 @@ public class coleccionables : MonoBehaviour
         if (collision.gameObject.CompareTag("pentagrama") && cuerda == true && craneo == true && oso == true && atrapasueno == true)// sirve sin poner el == true
         {
             //ending
+            SceneManager.LoadScene("endgame");
         }
 
         if (collision.gameObject.name == "cuerda")

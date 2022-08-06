@@ -20,7 +20,7 @@ public class FollowTarget : Physics2DObject
 	public Enums.Directions useSide = Enums.Directions.Up;
     private void Start()
     {
-		target = GameObject.Find("pl (Clone)").transform;
+		target = GameObject.FindGameObjectWithTag("Player").transform;
 	}
 
     // FixedUpdate is called once per frame
@@ -37,7 +37,11 @@ public class FollowTarget : Physics2DObject
 		}
 		
 		//Move towards the target
-		rigidbody2D.MovePosition(Vector2.Lerp(transform.position, target.position, Time.fixedDeltaTime * speed));
+		
 
+		if (target.gameObject.GetComponent<linterna>().encendido)
+		{
+			rigidbody2D.MovePosition(Vector2.Lerp(transform.position, target.position, Time.fixedDeltaTime * speed));
+		}
 	}
 }

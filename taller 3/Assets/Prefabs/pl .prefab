@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 6715823543546788646}
   - component: {fileID: 3341789042790749857}
   - component: {fileID: 3856482268707531335}
+  - component: {fileID: 765215132459368529}
   - component: {fileID: 352814456649397991}
   m_Layer: 0
   m_Name: 'pl '
@@ -271,6 +272,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vida: 5
+  timer: 0
+  timetotakeHP: 5
+  vidaUI:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  vidaIndex: 5
 --- !u!61 &3856482268707531335
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -297,6 +307,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.68, y: 0.92}
   m_EdgeRadius: 0
+--- !u!114 &765215132459368529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5823158710969684793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c20dd9d010562c344bdcbd830d5cf68d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  encendido: 0
 --- !u!95 &352814456649397991
 Animator:
   serializedVersion: 4
