@@ -12,6 +12,7 @@ public class LookAtTarget : MonoBehaviour
     {
        if(target != null)
         {
+            target = GameObject.FindGameObjectWithTag("Player").transform;
             Vector3 otherPos = transform.position - target.position;
             float alpha = Mathf.Atan2(otherPos.x, otherPos.y) * Mathf.Rad2Deg;
             this.transform.rotation = Quaternion.Euler(0, 0, offsetRotation - alpha);

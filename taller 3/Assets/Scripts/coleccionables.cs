@@ -34,6 +34,7 @@ public class coleccionables : MonoBehaviour
         {
             //ending
             SceneManager.LoadScene("endgame");
+            GameObject.FindGameObjectWithTag("Player").SetActive(false);
         }
 
         if (collision.gameObject.name == "cuerda")
