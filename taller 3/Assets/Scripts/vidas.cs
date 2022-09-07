@@ -40,13 +40,17 @@ public class vidas : MonoBehaviour
             SceneManager.LoadScene("Game Over");
             GameObject.FindGameObjectWithTag("Player").SetActive(false);
         }
+        if(vida >= 20)
+        {
+            vida = 20;
+        }
 
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            vida = vida -1;
+            vida = vida -5;
             
         }
         if (collision.gameObject.CompareTag("VIDAS"))
